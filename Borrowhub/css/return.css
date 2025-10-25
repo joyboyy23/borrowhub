@@ -175,15 +175,19 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 10px;
     }
     
     .container {
-        padding: 20px;
+        padding: 15px;
     }
     
     .logo {
         width: 50px;
+    }
+    
+    .title-container {
+        font-size: medium;
     }
     
     .summary-panel {
@@ -194,21 +198,43 @@ button:hover {
     
     .buttons-container {
         flex-wrap: wrap;
+        gap: 5px;
     }
     
     .btn {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 12px;
+        padding: 8px 10px;
     }
     
     .live-time {
         position: static;
-        margin: 10px auto 20px;
+        margin: 10px auto 15px;
         width: fit-content;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    /* Make table scrollable horizontally */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 11px;
     }
     
     table th, table td {
-        padding: 8px;
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+    
+    /* Make buttons smaller */
+    button {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+    
+    /* Search input */
+    #returnSearch {
         font-size: 14px;
     }
 }
