@@ -171,20 +171,19 @@ th {
 
     @media screen and (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 10px;
     }
     
     .container {
-        padding: 20px;
-    }
-    
-    .title-container {
-        flex-direction: column;
-        text-align: center;
+        padding: 15px;
     }
     
     .logo {
         width: 50px;
+    }
+    
+    .title-container {
+        font-size: medium;
     }
     
     .buttons-container {
@@ -194,43 +193,44 @@ th {
     
     .btn {
         font-size: 12px;
-        padding: 8px 6px;
-        flex: 1 1 auto;
-        min-width: 80px;
+        padding: 8px 10px;
     }
     
     .live-time {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 0 auto 20px;
-        display: block;
-        font-size: 0.85rem;
+        position: static;
+        margin: 10px auto 15px;
+        width: fit-content;
+        font-size: 0.9rem;
         padding: 8px 12px;
     }
     
+    /* Make table scrollable horizontally */
     table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
         font-size: 11px;
     }
     
-    table th, table td {
+    th, td {
         padding: 6px 4px;
         font-size: 11px;
     }
     
+    /* Make action buttons smaller */
     .view-btn {
         padding: 4px 8px;
         font-size: 11px;
+    }
+    
+    /* Search input */
+    #historySearch {
+        font-size: 14px;
     }
     
     #detailsModal div {
         width: 95%;
         padding: 15px;
         margin: 5% auto;
-    }
-    
-    #historySearch {
-        font-size: 14px;
-        padding: 10px;
     }
 }
