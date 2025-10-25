@@ -87,3 +87,23 @@ canvas {
     gap: 10px;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    video, canvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+    }
+    
+    button, .container a {
+        width: 100%;
+    }
+}

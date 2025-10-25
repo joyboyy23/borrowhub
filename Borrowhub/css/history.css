@@ -168,4 +168,69 @@ th {
             background-color: #FFFF00;
             font-weight: bold;
         }
+
+    @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
     
+    .container {
+        padding: 20px;
+    }
+    
+    .title-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    .buttons-container {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .btn {
+        font-size: 12px;
+        padding: 8px 6px;
+        flex: 1 1 auto;
+        min-width: 80px;
+    }
+    
+    .live-time {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 20px;
+        display: block;
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+    
+    table {
+        font-size: 11px;
+    }
+    
+    table th, table td {
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+    
+    .view-btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+    
+    #detailsModal div {
+        width: 95%;
+        padding: 15px;
+        margin: 5% auto;
+    }
+    
+    #historySearch {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

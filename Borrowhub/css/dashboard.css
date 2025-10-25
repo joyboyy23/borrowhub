@@ -114,3 +114,38 @@ body {
     position: relative;
     /* Keep your existing container styles */
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    .summary-panel {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .buttons-container {
+        flex-wrap: wrap;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .live-time {
+        position: static;
+        margin: 10px auto 20px;
+        width: fit-content;
+    }
+}
